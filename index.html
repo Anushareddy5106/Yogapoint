@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOGAPOINT</title>
+</head>
+<style>
+    body{
+        display: block;
+        margin: 0px;
+    }
+    html{
+    scroll-behavior: smooth;
+    }
+    /*head section*/
+    .head{
+        background-color: #141b25;
+        color: rgb(255, 251, 251);
+        top: 0px;
+        margin: 0px;
+        display: flex;
+        height: 60px;
+    }
+    head h1{
+        padding: 500px 100px;
+    }
+    .head img{
+        height: 50px;
+        width:50px ;
+        margin: 3px 600px 2px 0px;
+    }
+    /* navigation section*/
+    .navbar{
+        /*position: sticky;*/
+        top: 0px;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul li{
+        list-style: none;
+        margin: 30px 50px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+        font-size: 20px;
+    }
+    .navbar ul li a:hover{
+    color: rgb(255, 250, 250);
+    background-color: rgb(26, 24, 24);
+    border-radius: 10px;
+    padding:  10px 20px;
+}
+    .navbar::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0;
+    }
+    /*home section-1st part*/
+    .home1{
+        display: flex;
+        flex-direction: column;
+        padding:3px 200px;
+        height: 470px;
+        justify-content: center;
+        align-items: center;  
+        }
+    .home1::before{
+        content: "";
+        height: 90%;
+        width: 100%;
+        /*background:url('https://cdn.pixabay.com/photo/2017/08/06/00/27/yoga-2587066_1280.jpg')no-repeat center center/cover;*/
+        background:url('https://makeupandbeauty.com/wp-content/uploads/2015/12/The-7-Best-Yoga-Poses11.png')no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    .vertical1 {
+            border-left: 6px solid black;
+            height: 270px;
+            position:absolute;
+            left: 13%;
+        }
+    .home1 h1{
+        padding: 50px 800px 90px 30px;
+        font-size: 50px;
+        color: rgb(7, 7, 7);
+    }
+    /*home section -2nd part*/
+    .home2 h1{
+          font-size: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    .home2{
+        margin: 30px;
+    }
+    .home2div{
+        display:flex;
+        flex-direction: row;
+        padding: 30px 0px 0px 0px;
+        background-color: rgb(251, 255, 255);
+    }
+    .cls1 img{
+        padding: 0px 0px -50px 90px;
+        margin: 0px 30px 0px 0px ;
+    }
+    .cls2 img{
+        padding: 50px 0px -50px 90px;
+        margin: 30px 0px 0px 0px ;
+    }
+    
+    .adj img{
+        /*padding: 0px 0px -50px 90px;*/
+        height: 300px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .img2 img{
+        padding: 0px 20px 40px 40px;
+        height: 630px;
+        width: 300px;
+    }
+    .matter p{
+        padding: 0px 90px 30px 40px;
+        font-size: 20px;
+        color: rgb(107, 101, 101);
+    }
+    .matter h3{
+        padding: 0px 90px 30px 40px;
+        font-size: 20px;
+    }
+    .btn{
+        background-color: rgb(4, 22, 32);
+        color: rgb(245, 222, 222);
+        border-radius: 50px;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin: 30px;
+    }
+    .btn:hover{
+        background-color: rgb(130, 143, 143);
+        color: rgb(0, 0, 0);
+        border-radius: 50px;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin: 30px;
+    }
+    /*home section-3rd part*/
+    .home3{
+        margin: 10px;
+        padding: 10px 200px;
+        height: 470px;
+        justify-content: center;
+        align-items: center;
+    }
+    .home3 h1{
+        font-size: 40px;
+    }
+    .home3 p{
+        font-size: 20px;
+        padding:  20px 500px 20px 10px;
+        color: rgb(95, 87, 87);
+
+    }
+    .home3::before{
+        content: "";
+        height:80%;
+        width: 97%;
+        background:url('https://cdn2.stylecraze.com/wp-content/uploads/2013/07/Cobra-Pose.jpg')no-repeat center center/cover;
+        position: absolute;
+        top: 1400px;
+        left: 20px;
+        z-index: -1;
+        opacity: 0.6;
+    }
+    
+    /*home section-4th part*/
+     .home4{
+        display:flex;
+        flex-direction: row;
+        padding: 70px 0px 70px 0px;
+        background-color: rgb(221, 233, 227);
+        margin: 120px 20px 50px 20px;
+     }
+     .home4 p{
+        color: rgb(107, 101, 101);
+     }
+     .speciality{
+        padding: 30px 30px 30px 30px;
+        border: solid rgb(255, 250, 250) 2px;
+        margin: 0px 20px;
+        font-size: 20px;
+        background-color:rgb(255, 252, 246);
+    }
+    /*home section-5th part*/
+    .home5{
+        display:flex;
+        flex-direction: row;
+        padding: 10px 50px 50px 50px;
+        margin: 0px;
+    }
+    .home5::before{
+        content: "";
+        height:90%;
+        width: 97%;
+        background:url('https://image.cnbcfm.com/api/v1/image/101594538-157885826.jpg?v=1532564503')no-repeat center center/cover;
+        position: absolute;
+        top: 2500px;
+        left: 20px;
+        z-index: -1;
+        opacity: 0.19;
+    }
+    .img4th img{
+        padding: 0px 100px 40px 200px;
+        height: 600px;
+        width: 400px;
+    }
+    .matter5th{
+        display:flex;
+        flex-direction: column; 
+        padding: 10px 170px 0px 50px;
+    }
+    .matter5th p{
+       font-size: 17px;
+       color: rgb(49, 43, 43);
+    }
+    /*contact section*/
+    .contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    z-index: -1;
+    opacity: 0.4;
+    background:url('https://thumbs.dreamstime.com/b/spotlight-empty-brick-wall-56485704.jpg')
+    }
+
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px ;
+    padding-bottom: 34px;
+    margin:  0px 50px ;
+    color:rgb(4, 22, 32);
+}
+ .contact-box input, 
+.contact-box textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 9px;
+    border: solid 2px rgb(4, 22, 32);
+    font-size: 16px;
+} 
+
+.contact-box form{
+    width: 36%;
+}
+
+.contact-box label{
+   font-family: 'Bree Serif', serif;
+   font-size: 20px;
+
+} 
+.contact h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    padding: 10px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+.contact{
+    margin:  0px 0px 20px 0px;
+}
+    /*footer section*/
+    .cpyrt{
+    background-color:#141b25;
+       color: blanchedalmond;
+       text-align:center ;
+       height: 30px; ;
+       font: 30px;
+   }
+   .container{
+       display: flex;
+       flex-direction: row;
+       background-color:#141b25;
+       color: whitesmoke;
+   }
+   .im2{
+       height: 60px;
+       width: 60px;
+       margin: 20px 20px;
+   }
+   .part1{
+        display: flex;
+        flex-direction:column;
+        margin: 0px;
+        padding: 0px 150px;
+      
+    }
+    .instafb{
+        display: flex;
+        flex-direction:row;
+    }
+    .gmailcall{
+        display: flex;
+        flex-direction:row;
+    }
+    .vertical2 {
+            border-left: 3px solid rgb(255, 251, 251);
+            height: 270px;
+            position:absolute;
+            left: 30%;
+            padding: 20px 20px 20px 20px;
+        }
+        .part2{
+        display: flex;
+        flex-direction:column;
+        margin: 0px;
+        padding: 0px 130px;
+      
+    }
+    
+
+</style>
+<body>
+  <header class="head">
+      <img src="https://images.desainkaosmurah.com/image/img_user/user_1/20200114134224_Meditation_Yoga_Logo_5.jpg" alt="">
+      <h1>YOGAPOINT</h1>
+  </header>
+    <nav class="navbar">
+          <ul>
+              <li class="navli"><a href="#home">Home</a></li>
+              <li class="navli"><a href="#classes">classes</a></li>
+              <li class="navli"><a href="#about us">About us</a></li>
+              <li class="navli"><a href="#contact us">Contact us</a></li>
+          </ul>
+    </nav>
+    <section class="home1">
+        <div class="vertical1"></div>
+          <h1>
+              What Hurts You Today.... Makes You Stronger Tomorrow
+          </h1>
+    </section>
+    <section id="home">
+    <section class="home2">
+       <div class="home2div">
+           <div class="img2">
+           <img src="https://wallpapershome.com/images/pages/pic_v/11090.jpg" alt="">
+           </div>
+           <div class="adj">
+               <div class="cls1">
+                <img src="https://cdn.pixabay.com/photo/2019/12/31/16/06/yoga-4732209_1280.jpg" alt="">
+
+               </div>
+                <div class="cls2">
+                    <img src="https://www.spadreams.com/blog/wp-content/uploads/sites/3/2017/12/yoga-group-beach.jpg" alt=""> 
+                </div>
+        </div>
+        <div class="matter">
+            <h1>
+                Welcome to "YOGAPOINT!"
+            </h1>
+             <h3> <em> "YOGA is journey of the SELF, through the SELF , to the SELF" </em></h3>
+             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa iusto ab omnis excepturi tempore fugit quasi molestias voluptate at? Maiores dolor minus vero corporis dolore aliquid. Unde, dignissimos officiis.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi perferendis quos, labore beatae odit amet nesciunt provident in consectetur tenetur quidem perspiciatis eius itaque accusantium nostrum. Amet aliquid asperiores quidem?
+             </P>
+             <button class="btn">
+                      Join Us
+             </button>
+        </div>
+       </div>
+    </section>
+    </section>
+    <section class="home3">
+            <h1>Why do we need YOGA ?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum quasi iusto omnis impedit praesentium quaerat at, itaque veritatis, delectus mollitia nostrum, placeat necessitatibus consequuntur deserunt doloremque eligendi. Illo, magnam.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus fugiat ullam. Debitis, repellendus, nisi nam ea dolorem tenetur culpa adipisci placeat aliquam fuga numquam maiores nihil modi eum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque excepturi dolore quas modi sed nostrum consequuntur, amet labore facere voluptatibus aperiam voluptas, quae, suscipit cupiditate est dolor provident tempora ex.</p>
+    </section>
+    <section id="about us">
+    <section class="home4">
+        <div class="speciality">
+             <h3>Outdoor Activites </h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ab quia unde corrupti, illo, accusantium numquam facere rerum commodi aliquam sint, mollitia iure! Nobis mollitia neque, odio quod vel reprehenderit!</p>
+        </div>
+        <div class="speciality">
+            <h3>Experienced Trainers</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni illo exercitationem nesciunt voluptates maxime iste reprehenderit numquam modi quo possimus ipsum aliquam necessitatibus totam, rem expedita, voluptatibus, velit inventore voluptas?</p>
+        </div>
+        <div class="speciality">
+            <h3>Happy Environment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro quaerat qui vitae, ad nobis eligendi consectetur explicabo voluptates? Libero, in et? Quidem, ea? Neque tempore eaque repellendus quibusdam? Magnam?</p>
+        </div>
+    </section>
+    <section class="home5">
+           <div class="img4th">
+                 <img src="https://preview.colorlib.com/theme/yogabest/images/about.png" alt="">
+           </div>
+           <div class="matter5th">
+            <h1> CONTROL YOUR BODY TO FREE YOUR SOUL</h1>
+           <div class="submatter">
+                <h2>Body & Mind Balance</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit accusamus aliquam animi alias quas, eveniet repellat molestias harum voluptates repellendus, illo omnis itaque, laboriosam temporibus a fugiat autem inventore quisquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. soluta molestias eveniet corrupti.</p>
+           </div>
+           <div class="submatter">
+            <h2>Healthy Daily Life</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit accusamus aliquam animi alias quas, eveniet repellat molestias harum voluptates repellendus, illo omnis itaque, laboriosam temporibus a fugiat autem inventore quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus  aliquid quibusdam maiores.</p>
+        </div>
+        <div class="submatter">
+            <h2>Improves your flexibility</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit accusamus aliquam animi alias quas, eveniet repellat molestias harum voluptates repellendus, illo omnis itaque, laboriosam temporibus a fugiat autem inventore quisquam. Lorem ipsum dolor sit,Tempore sint perspiciatis id, eos tenetur expedita provident quo mollitia nihil temporibus eveniet.</p>
+        </div>
+        </div>
+    </section>
+    </section>
+    <section id="contact us"></section>
+    <section class="contact">
+        <h1>Make an appointment</h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="1" rows="5"></textarea>
+                </div>
+                <button class="btn">
+                    submit
+           </button>
+            </form>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="container">
+           <div class="part1">
+               <div>
+                 <h2>YOGAPOINT</h2>
+                <p> we on social media.</p> 
+               </div>
+               <div>
+                 <div class="instafb">
+                     <a href="https://instagram.com" target="_blank"> <img class="im2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt=""></a>
+                     <a href="https://facebook.com" target="_blank"><img class="im2" src="http://louisville.edu/medicine/departments/biochemistry/our_people/student-directories/networking-icons/facebook-logo/image" alt=""></a>
+                 </div>
+         <div class="gmailcall">
+             <a href="https://gmail.com" target="_blank"> <img class="im2" src="https://i2.wp.com/appchasers.com/wp-content/uploads/2015/03/image13.png?fit=512%2C512" alt=""></a>
+             <img src="https://clipartion.com/wp-content/uploads/2016/03/phone-call-clipart.gif" alt="" class="im2">
+             </div>
+         </div>
+           </div>
+           <div class="vertical2"></div>
+           <div class="part2">
+               <h2>Any Queries?</h2>
+            <p> address : road no-04, banjara hills,hyderabad,telngana.</p>
+            <p> contact us: +91 392 3929 210</p> 
+             <p>info@yourdomain.com</p>
+         </div>
+         </div>
+        <div class="cpyrt">
+         copyright &copy; www.yogapoint.com.  All rights reserved
+     </div>
+     </footer>
+    
+</body>
+</html>
